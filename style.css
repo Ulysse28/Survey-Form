@@ -1,0 +1,25 @@
+
+/*Corps de la page*/
+body{
+    background-image: url("Images/lego.jpg");
+    
+}
+
+
+/*titre de la page*/
+#title{
+    text-align:center;
+  
+}
+
+/*phrase de description*/
+#description{
+    text-align:center;
+    font-size:25px;
+    color:black;
+}
+
+
+
+
+
