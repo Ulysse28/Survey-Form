@@ -19,7 +19,23 @@ body{
     color:black;
 }
 
+#survey-form{
+
+}
 
 
+.form{
+   
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#93999b;
+    opacity: 0.5;
+    padding:0.5em 0.5em 0.5em 0.5em;
+}
 
-
+.champ{
+    height:20px;
+    width:300px;
+    
+}
