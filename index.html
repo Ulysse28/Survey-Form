@@ -2,132 +2,132 @@
 
 <html>
 
-    <head>
-        <title>Test Survey Form</title>
-        <meta charset="ut-8">
-        <link rel="stylesheet" href="style.css">
+<head>
+    <title>Test Survey Form</title>
+    <meta charset="ut-8">
+    <link rel="stylesheet" href="style.css">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="haut">
+    <div class="haut">
         <h1 id="title">Ulysse Valdenaire Survey Form</h1>
-        </div>
+    </div>
 
-        <div class="bas">
+    <div class="bas">
         <p id="description">Thank you for taking your time helping me to improve my website</p>
-        </div>
-        <br>
+    </div>
+    <br>
 
 
-        <div class="form">
+    <div class="form">
 
         <form action="#" id="survey-form">
 
 
             <!--NOM-->
-            <label>Name</label><br>
+            <label id="name-label">Name</label><br>
             <input class="champ" id="name" type="text" placeholder="Enter your name"><br><br>
 
             <!--EMAIL-->
-            <label>Email</label><br>
+            <label id="email-label">Email</label><br>
             <input class="champ" id="email" type="email" placeholder="Enter your email"><br><br>
 
             <!--AGE-->
-            <label>Age (optional)</label><br>
-            <input class="champ" id="age" type="number" placeholder="Enter your age"><br><br>
+            <label id="number-label">Age (optional)</label><br>
+            <input class="champ" id="number" type="number" min="15" max="110" placeholder="Enter your age"><br><br>
 
             <!--MENU DEROULANT-->
             <label>Which option best describes your current role?</label><br>
             <select name="job" id='job' class="champ">
 
-            <option value="ecrivain">Ecrivain</option>
-            <option value="develeoppeur web">Developeur Web</option> 
-            <option value="developpeur mobile">developpeur mobile</option> 
-            <option value="Explorateur">Explorateur</option> 
-            <option value="Acteur">Acteur</option> 
+                <option value="ecrivain">Ecrivain</option>
+                <option value="develeoppeur web">Developeur Web</option>
+                <option value="developpeur mobile">developpeur mobile</option>
+                <option value="Explorateur">Explorateur</option>
+                <option value="Acteur">Acteur</option>
 
-           </select><br><br>
+            </select><br><br>
 
 
-           <!--DROPDOWN-->
-           <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+            <!--DROPDOWN-->
+            <div id="dropdown" id="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
-          </div>
 
-          <br><br>
-
-
-          <label>Would you recommend my books to a friend ?</label><br>
-          <input type="radio" name="answer" value="definitely" id="definitely"/> 
-          <label for="definitely">Definitely</label><br />
-
-          <input type="radio" name="answer" value="maybe" id="maybe"/>
-           <label for="maybe">Maybe</label><br/>
-
-          <input type="radio" name="answer" value="not sure" id="not sure" />
-          <label for="not sure">Not sure</label><br />
-         
-      </p>
-
-      <label>What is your favorite book between them ?</label><br>
-            <select name="book" id='job' class="champ">
-
-            <option value="Harry Potter">Harry Potter</option>
-            <option value="The Lord of the Rings">The Lord of the Rings</option> 
-            <option value="Game of Throne">Game of Throne</option> 
-            <option value="Eragon">Eragon</option> 
-            <option value="Les Chevaliers d'Emeuraude">Les Chevaliers d'Emeuraude</option> 
-
-           </select><br><br>
+            <br><br>
 
 
-           <label>What is your favorite kind of books ?</label><br>
+            <label>Would you recommend my books to a friend ?</label><br>
+            <input type="radio" name="answer" value="definitely" id="definitely" />
+            <label for="definitely">Definitely</label><br />
 
-           <input type="checkbox" name="answer" value="history" id="history"/> 
-           <label for="history">History</label><br />
- 
-           <input type="checkbox" name="answer" value="Fantasy" id="Fantasy"/>
-            <label for="Fantasy">Fantasy</label><br/>
- 
-           <input type="checkbox" name="Thriller" value="Thriller" id="Thriller" />
-           <label for="Thriller">Thriller</label><br />
+            <input type="radio" name="answer" value="maybe" id="maybe" />
+            <label for="maybe">Maybe</label><br />
 
-           <input type="checkbox" name="Comic" value="Comic" id="Comic" />
-           <label for="Comic">Comic</label><br />
-
-           <input type="checkbox" name="Biography" value="Biography" id="Biography" />
-           <label for="Biography">Biography</label><br />
-
-
-          
-            <p>
-                <label for="ameliorer">
-                Comment pensez-vous que je puisse améliorer mon site ?
-                </label>
-                <br />
-                
-                <textarea name="ameliorer" id="ameliorer" rows="10" cols="80">
-                
-                </textarea> 
+            <input type="radio" name="answer" value="not sure" id="not sure" />
+            <label for="not sure">Not sure</label><br />
 
             </p>
 
-         </form>
+            <label>What is your favorite book between them ?</label><br>
+            <select name="book" id='job' class="champ">
+
+                <option value="Harry Potter">Harry Potter</option>
+                <option value="The Lord of the Rings">The Lord of the Rings</option>
+                <option value="Game of Throne">Game of Throne</option>
+                <option value="Eragon">Eragon</option>
+                <option value="Les Chevaliers d'Emeuraude">Les Chevaliers d'Emeuraude</option>
+
+            </select><br><br>
 
 
-            <button class="button" type="submit">Submit</button>
+            <label>What is your favorite kind of books ?</label><br>
+
+            <input type="checkbox" name="answer" value="history" id="history" />
+            <label for="history">History</label><br />
+
+            <input type="checkbox" name="answer" value="Fantasy" id="Fantasy" />
+            <label for="Fantasy">Fantasy</label><br />
+
+            <input type="checkbox" name="Thriller" value="Thriller" id="Thriller" />
+            <label for="Thriller">Thriller</label><br />
+
+            <input type="checkbox" name="Comic" value="Comic" id="Comic" />
+            <label for="Comic">Comic</label><br />
+
+            <input type="checkbox" name="Biography" value="Biography" id="Biography" />
+            <label for="Biography">Biography</label><br />
+
+
+
+            <p>
+                <label for="ameliorer">
+                    Comment pensez-vous que je puisse améliorer mon site ?
+                </label>
+                <br />
+
+                <textarea name="ameliorer" id="ameliorer" rows="10" cols="80">
+
+                </textarea>
+
+            </p>
+
         </form>
-    
+
+
+        <button id="submit" class="button" type="submit">Submit</button>
+        </form>
+
     </div>
 
-    </body>
+</body>
 
 
 

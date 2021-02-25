@@ -19,19 +19,28 @@ body{
     color:black;
 }
 
-#survey-form{
+#survey-form{width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#93999b;
+    border-radius:5px;
+    opacity: 0.5;
+    padding:0.5em 0.5em 0.5em 0.5em;
+
+}
+
+#email:invalid{
+  background-color: rgb(206, 101, 101);
+}
+#number:invalid{
+  background-color: rgb(206, 101, 101);
 
 }
 
 
 .form{
    
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:#93999b;
-    opacity: 0.5;
-    padding:0.5em 0.5em 0.5em 0.5em;
+    
 }
 
 .champ{
